@@ -1,4 +1,92 @@
-.musica{
-    width: 0;
-    height: 0;
+:root{
+    --gris: #E1E1E1;
+    --letras: #ffffff;
+    --fondo: #000000;
+
+    --fuente: 'Mouse Memoirs', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;    /*1rem = 10px*/
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--fondo);
+    color: var(--letras);
+    font-family: var(--fuente);
+    font-size: 2.5rem;
+    line-height: 2;
+}
+
+a{
+    text-decoration: none;
+    color: var(--letras)
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3.5rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+
+h1,h2,h3,h4{
+    color: var(--letras);
+}
+
+.contenedor{
+    /*max-width: 120rem;
+    width: 90%;*/
+    width: min(80%, 120rem);
+    margin: 0 auto;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+/*Header*/
+.header{
+    height: 50rem;
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo_bold{
+    font-weight: bold;
+}
+
+.barra{
+    height: 10rem;
+    width: auto;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacion__enlace{
+    padding: 1rem;
 }
